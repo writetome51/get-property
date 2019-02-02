@@ -8,8 +8,9 @@ Because this function allows <b>property</b> to be a string that can include dot
 ( i.e,  'property.subproperty.subsubproperty' ) .
 
 Note:  even if you are getting the value of an array item, here you need to use  
-dot-notation and not square braces.  Example:  if getting the first item of the  
-first item of an array, write:  getProperty('0.0', array);  // instead of array[0][0]
+dot-notation and not square braces.  
+Example:  if getting the first item of the first item of an array, write:  
+`getProperty('0.0', array);  // instead of array[0][0]`
 
 ## Examples
 ```

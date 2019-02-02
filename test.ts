@@ -23,6 +23,6 @@ let city = {
 	}
 };
 
-let ageOfMeganTrainor = getProperty('cityCouncil.members.0.age',  city);
+let ageOfMeganTrainor = getProperty('cityCouncil.members.0.age', city);
 if (ageOfMeganTrainor === 26) console.log('test 2 passed');
 else console.log('test 2 FAILED');
