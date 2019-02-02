@@ -42,9 +42,7 @@ npm install @writetome51/get-property
 ## Loading
 ```
 // If using TypeScript:
-import {getInNumericOrderByProperty} from '@writetome51/get-in-numeric-order-by-property';
+import {getProperty} from '@writetome51/get-property';
 // If using ES5 JavaScript:
-var getInNumericOrderByProperty = 
-    require('@writetome51/get-in-numeric-order-by-property').getObjectFromJSON;
+var getProperty = require('@writetome51/get-property').getProperty;
 ```
-
