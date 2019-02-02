@@ -1,4 +1,4 @@
-import { getProperty } from './getProperty';
+import { getProperty } from './index';
 
 
 // Test 1:
