@@ -1,10 +1,8 @@
-# getProperty()
-
-## getProperty(property: string,  object): any
+# getProperty(property: string,  object): any
 
 Why would you use this to get a property value instead of simply writing  
-<b>object</b>[<b>property</b>] or <b>object</b>.<b>property</b> ?  
-Because this function allows <b>property</b> to be a string that can include dot notation  
+`object[property]` or `object.property` ?  
+Because this function allows `property` to be a string that can include dot notation  
 ( i.e,  'property.subproperty.subsubproperty' ) .
 
 Note:  even if you are getting the value of an array item, here you need to use  
