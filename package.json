@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/get-property",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Allows you to retrieve value of object property using dot-notation in a string",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -27,6 +27,6 @@
   "homepage": "https://github.com/writetome51/get-property#readme",
   "devDependencies": {},
   "dependencies": {
-    "basic-data-handling": "~1.0.15"
+    "basic-data-handling": "~2.0.0"
   }
 }

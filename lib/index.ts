@@ -2,7 +2,7 @@ import { errorIfNotString } from 'basic-data-handling/errorIfNotString';
 import { errorIfNotObject } from 'basic-data-handling/errorIfNotObject';
 import { isEmpty } from 'basic-data-handling/isEmpty_notEmpty';
 
-// parameter property is a string that can include dot nation
+// parameter `property` is a string that can include dot-notation
 // ( i.e,  'property.subproperty.subsubproperty' ) .
 
 export function getProperty(property, obj): any {
@@ -10,13 +10,22 @@ export function getProperty(property, obj): any {
 	if (isEmpty(property)) throw new Error('Input must be string that is not empty.');
 	errorIfNotObject(obj);
 
-	let properties = property.split('.');
-	let numProperties = properties.length;
+	let properties = getPropertiesSeparatedByDot(property);
+	return getValueFromLastPropertyIn(properties);
 
-	// This walks down the property hierarchy.
-	for (let i = 0; i < numProperties; ++i) {
-		let prop = properties[i];
-		obj = obj[prop];
+
+	function getPropertiesSeparatedByDot(property): string[] {
+		return property.split('.');
 	}
-	return obj;
+
+
+	function getValueFromLastPropertyIn(properties): any {
+		// This walks down the hierarchy in properties.
+		for (let i = 0; i < properties.length; ++i) {
+			obj = obj[properties[i]];
+		}
+		return obj;
+	}
+
+
 }
