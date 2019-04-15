@@ -1,6 +1,6 @@
-import { errorIfNotString } from 'basic-data-handling/errorIfNotString';
-import { errorIfNotObject } from 'basic-data-handling/errorIfNotObject';
-import { isEmpty } from 'basic-data-handling/isEmpty_notEmpty';
+import { errorIfNotString } from 'error-if-not-string';
+import { errorIfNotObject } from 'error-if-not-object';
+import { isEmpty } from '@writetome51/is-empty-not-empty';
 
 // parameter `property` is a string that can include dot-notation
 // ( i.e,  'property.subproperty.subsubproperty' ) .
