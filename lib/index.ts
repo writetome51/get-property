@@ -1,13 +1,11 @@
-import { errorIfNotString } from 'error-if-not-string';
+import { errorIfLengthIsZero } from 'error-if-length-is-zero';
 import { errorIfNotObject } from 'error-if-not-object';
-import { isEmpty } from '@writetome51/is-empty-not-empty';
 
 // parameter `property` is a string that can include dot-notation
 // ( i.e,  'property.subproperty.subsubproperty' ) .
 
 export function getProperty(property, obj): any {
-	errorIfNotString(property);
-	if (isEmpty(property)) throw new Error('Input must be string that is not empty.');
+	errorIfLengthIsZero(property);
 	errorIfNotObject(obj);
 
 	let properties = getPropertiesSeparatedByDot(property);

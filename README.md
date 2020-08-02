@@ -39,9 +39,6 @@ npm install @writetome51/get-property
 ```
 
 ## Loading
-```
-// If using TypeScript:
+```js
 import {getProperty} from '@writetome51/get-property';
-// If using ES5 JavaScript:
-var getProperty = require('@writetome51/get-property').getProperty;
 ```

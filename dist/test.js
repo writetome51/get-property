@@ -1,18 +1,16 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var index_1 = require("./index");
+import { getProperty } from './index';
 // Test 1:
-var players = [
+let players = [
     [0, [100]],
     [2, 3]
 ];
-var result = index_1.getProperty('0.1.0', players);
+let result = getProperty('0.1.0', players);
 if (result === 100)
     console.log('test 1 passed');
 else
     console.log('test 1 FAILED');
 // Test 2:
-var city = {
+let city = {
     name: 'San Francisco',
     cityCouncil: {
         members: [
@@ -21,7 +19,7 @@ var city = {
         ]
     }
 };
-var ageOfMeganTrainor = index_1.getProperty('cityCouncil.members.0.age', city);
+let ageOfMeganTrainor = getProperty('cityCouncil.members.0.age', city);
 if (ageOfMeganTrainor === 26)
     console.log('test 2 passed');
 else
