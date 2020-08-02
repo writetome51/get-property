@@ -3,11 +3,7 @@
   "version": "2.0.0",
   "description": "Allows you to retrieve value of object property using dot-notation in a string",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc"
-  },
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/writetome51/get-property.git"

@@ -35,7 +35,7 @@ let ageOfMeganTrainor = getProperty('cityCouncil.members.0.age',  city);
 You must have npm installed first.  Then, in the command line:
 
 ```bash
-npm install @writetome51/get-property
+npm i @writetome51/get-property
 ```
 
 ## Loading
