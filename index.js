@@ -20,7 +20,7 @@ export function getProperty(property, obj) {
 
 	function getValueFromLastPropertyIn(properties) {
 		// This walks down the hierarchy in properties.
-		for (let i = 0; i < properties.length; ++i) {
+		for (let i = 0, length = properties.length; i < length; ++i) {
 			obj = obj[properties[i]];
 		}
 		return obj;
