@@ -1,14 +1,15 @@
 import {getProperty} from './index.js';
+
 // Test 1:
 let players = [
 	[0, [100]],
 	[2, 3]
 ];
 let result = getProperty('0.1.0', players);
-if (result === 100)
-	console.log('test 1 passed');
-else
-	console.log('test 1 FAILED');
+if (result === 100) console.log('test 1 passed');
+else console.log('test 1 FAILED');
+
+
 // Test 2:
 let city = {
 	name: 'San Francisco',
@@ -44,17 +45,6 @@ if (errTriggered) console.log('test 4 passed');
 else console.log('test 4 FAILED');
 
 
-errTriggered = false;
-try {
-	getProperty('a', 'a');
-} catch (e) {
-	errTriggered = true;
-}
-if (errTriggered) console.log('test 5 passed');
-else console.log('test 5 FAILED');
-
-
 result = getProperty('a', []);
-
 if (result === undefined) console.log('test 6 passed');
 else console.log('test 6 FAILED');
